@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    .radios .radio {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .radios input[type="radio"] {
+      display: none;
+    }
+
+    .radios input[type="radio"]:checked+.radio {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="w-full">
+    <div class="w-[80%] md:w-[60%] lg:w-[40%] mx-auto z-10 relative">
+      <div class="flex justify-between items-center my-10">
+        <img src="assets/tag.png" alt="" class="w-12 h-12" />
+        <img src="assets/fifty.png" alt="" class="w-40 h-40" />
+      </div>
+      <h3 class="font-bold text-center text-2xl md:text-3xl my-8 w-[90%] mx-auto">
+        Lets get started on a soft note, we might have a gift for you on your
+        next birthday...
+      </h3>
+
+      <form action="" class="my-10">
+        <h3 class="font-bold text-2xl md:text-3xl mb-">
+          Personal Information
+        </h3>
+        <p class="mb-4 text-sm">
+          Let us begin with setting up your profile with your personal
+          information
+        </p>
+
+        <div class="mb-8">
+          <label for="" class="my-6 block font-bold">Name | Nickname</label>
+          <input type="text" class="block w-full p-4 border-[1px] border-black outline-none rounded-lg" />
+        </div>
+
+        <div class="grid mb-8 md:grid-cols-2 grid-cols-1 md:gap-6 w-full">
+          <div class="mb-6">
+            <label for="" class="my-4 block font-bold">Phone Number</label>
+            <input type="number" class="block w-full p-4 border-[1px] border-black outline-none rounded-lg" />
+          </div>
+          <div class="mb-6">
+            <label for="" class="my-4 block font-bold">Birthday</label>
+            <input type="date" class="block w-full p-4 border-[1px] border-black outline-none rounded-lg" />
+          </div>
+        </div>
+
+        <div class="mb-24 w-full">
+          <label for="" class="my-4 block font-bold">Would you like us to take your full body measurement on arrival ?
+          </label>
+
+          <div class="mb-6 flex sm:flex-row flex-col gap-6 radios">
+
+            <input type="radio" name="rGroup" value="1" id="r1" />
+            <label for="r1"
+              class="radio custom-checkbox checkbox p-4 min-w-[8rem] mr-6 border-[1px] border-black outline-none rounded-lg hover:text-white hover:bg-black hover:font-bold text-center cursor-pointer toggle-bg !flex items-center justify-center ">
+              Yes</label>
+            <input type="radio" name="rGroup" value="2" id="r2" />
+            <label for="r2"
+              class="radio custom-checkbox checkbox p-4 min-w-[8rem] mr-6 border-[1px] border-black outline-none rounded-lg hover:text-white hover:bg-black hover:font-bold text-center cursor-pointer toggle-bg !flex items-center justify-center">
+              No</label>
+            <input type="radio" name="rGroup" value="3" id="r3" />
+            <label for="r3"
+              class="radio custom-checkbox checkbox p-4 min-w-[8rem] mr-6 border-[1px] border-black outline-none rounded-lg hover:text-white hover:bg-black hover:font-bold text-center cursor-pointer toggle-bg !flex items-center justify-center">
+              Already have one</label>
+          </div>
+
+          <p class="text-sm">
+            Select “yes” if you will like us to make bespoke pieces for you
+            like agbada, senator.. etc & No if you have that covered already
+          </p>
+        </div>
+      </form>
+      <a href="preference.html">
+        <button id=""
+          class="w-full block mt-10 mx-auto p-4 rounded-[3rem] bg-black text-white mb-8 font-bold  lg:text-xl">
+          Proceed to your styling preference
+        </button>
+      </a>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+<script>
+  let selectedCheckbox = null;
+
+  function toggleCheckbox(clickedId) {
+    const clickedCheckbox = document.getElementById(clickedId);
+
+    if (selectedCheckbox === clickedCheckbox) {
+      // Unselect the checkbox if it's already selected
+      selectedCheckbox.classList.remove("active:bg-black");
+      selectedCheckbox = null;
+    } else {
+      // Toggle selection between checkboxes
+      if (selectedCheckbox) {
+        selectedCheckbox.classList.remove("active:bg-black");
+      }
+
+      selectedCheckbox = clickedCheckbox;
+      selectedCheckbox.classList.add("active:bg-black");
+    }
+  }
+</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/src/slick/slick.min.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>

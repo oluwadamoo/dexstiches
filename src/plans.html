@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</head>
+
+<body>
+  <div class="w-full">
+    <div class="w-[90%] md:w-[60%] lg:w-[40%] mx-auto z-10 relative">
+      <div class="flex justify-between items-center my-10">
+        <img src="assets/tag.png" alt="" class="w-12 h-12" />
+        <img src="assets/hundred.png" alt="" class="w-40 h-40" />
+      </div>
+      <h3 class="font-bold text-center text-2xl md:text-3xl my-8 w-[90%] mx-auto">
+        Weldon! final step is to plan & schedule your next appointment
+      </h3>
+
+
+      <!-- 1 -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">Do you require formal or casual wears Monday to Fridays ?</label>
+        <form class="radios mb-6 grid grid-cols-2  lg:grid-cols-[auto,1fr] gap-4">
+          <input type="radio" name="rGroup" value="1" id="jeans1" />
+          <label for="jeans1"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Formal</label>
+          <input type="radio" name="rGroup" value="2" id="jeans2" />
+          <label for="jeans2"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Casual</label>
+          <input type="radio" name="rGroup" value="3" id="jeans3" />
+          <label for="jeans3"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Both</label>
+
+        </form>
+      </div>
+
+      <!-- 2 -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">What is your occupation?</label>
+        <input type="text"
+          class="p-4 h-[4rem] text-xs md:text-lg  flex justify-center items-center border-[1px] border-black outline-none rounded-lg w-[100%]" />
+      </div>
+
+      <!-- 3 -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">How many wears do you intend to shop for?
+        </label>
+        <form class="radios mb-6 grid grid-cols-2  lg:grid-cols-[auto,1fr] gap-4">
+          <input type="radio" name="rGroup" value="1" id="limit1" />
+          <label for="limit1"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            10 - 20</label>
+          <input type="radio" name="rGroup" value="2" id="limit2" />
+          <label for="limit2"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            20 - 30</label>
+          <input type="radio" name="rGroup" value="3" id="limit3" />
+          <label for="limit3"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            30 - 50</label>
+          <input type="radio" name="rGroup" value="4" id="limit4" />
+          <label for="limit4"
+            class="radio p-2 pt-4 lg:pt-2 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            No limits</label>
+
+        </form>
+      </div>
+
+      <!-- 4 -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">How much maximum do you intend to spend on this shopping
+          appointment?</label>
+        <form class="radios mb-6 grid grid-cols-2  lg:grid-cols-[auto,1fr] gap-4">
+          <input type="radio" name="rGroup" value="1" id="budget1" />
+          <label for="budget1"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Above 50k</label>
+          <input type="radio" name="rGroup" value="2" id="budget2" />
+          <label for="budget2"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            100k - 250k</label>
+          <input type="radio" name="rGroup" value="3" id="budget3" />
+          <label for="budget3"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            250k - 500k</label>
+          <input type="radio" name="rGroup" value="4" id="budget4" />
+          <label for="budget4"
+            class="radio p-2 pt-4 lg:pt-2 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            500k and above</label>
+
+        </form>
+      </div>
+
+      <!-- 5 -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">Subscription to Dexstitches VIP club | You can subscribe to weekly,
+          monthly or yearly unlimited supply of wears</label>
+        <form class="radios mb-6 grid grid-cols-2  lg:grid-cols-[auto,1fr] gap-4">
+          <input type="radio" name="rGroup" value="1" id="time1" />
+          <label for="time1"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Weekly</label>
+          <input type="radio" name="rGroup" value="2" id="time2" />
+          <label for="time2"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Monthly</label>
+          <input type="radio" name="rGroup" value="3" id="time3" />
+          <label for="time3"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Yearly</label>
+          <input type="radio" name="rGroup" value="4" id="time4" />
+          <label for="time4"
+            class="radio p-2 pt-4 lg:pt-2 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Not interested</label>
+
+        </form>
+        <p class="text-xs">
+          We will be committed to replenishing your wardrobe and styling you
+          none stop depending on the duration selected
+        </p>
+      </div>
+
+      <!-- 6 -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">How much maximum do you intend to spend on this shopping
+          appointment?</label>
+
+        <div
+          class="py-4 px-8 h-64 text-xs md:text-lg w-full flex items-center border-[1px] border-fuchsia outline-none rounded-3xl relative">
+          <div class="milestone mb-8" style="left: 20px; top:15px; font-weight: 400;">Min</div>
+          <div class="milestone mb-8" style="right: 20px; top:15px; font-weight: 400;">Max</div>
+          <div id="sliderValue" class="mt-2 text-center  text-[#797979] absolute top-[10rem]"></div>
+          <div class="milestone mb-4" style="left: 20px;">N50,000</div>
+          <div class="milestone mb-4" style="right: 20px;">N5M</div>
+          <input type="range" id="slider" min="50000" max="5000000" step="50000" value="50000"
+            class="slider mt-[11rem] w-[80%]" />
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">Whatelse would you like us to know ahead of your appointment to
+          serve you better ahead of your appointment</label>
+        <textarea
+          class="p-4 h-[9rem] text-xs md:text-lg w-full flex justify-center items-center border-[1px] border-black outline-none rounded-lg "
+          name="" id="" cols="30" rows="10"></textarea>
+      </div>
+
+      <!-- 8 -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">What will you like to call this styling preference</label>
+        <input type="text"
+          class="p-4 h-[4rem] text-xs md:text-lg w-full flex justify-center items-center border-[1px] border-black outline-none rounded-lg " />
+        <p class="text-xs">
+          use a name you can remember as you will use it to book future
+          appointments, you can create two different style profiles
+        </p>
+      </div>
+
+      <!-- 9 -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">Where would you love to shop & fit ?</label>
+        <form class="radios mb-6 grid grid-cols-2  lg:grid-cols-[auto,1fr] gap-4">
+          <input type="radio" name="rGroup" value="1" id="location1" />
+          <label for="location1"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Instore</label>
+          <input type="radio" name="rGroup" value="2" id="location2" />
+          <label for="location2"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Home Service</label>
+        </form>
+        <p class="text-xs">
+          Note: Home service costs minimum of additional #25,000 depending on
+          the location immediately after your appointment is done (limited to
+          Lagos currently)
+        </p>
+      </div>
+
+
+      <!-- Buttons -->
+      <input type="date" class="hidden" id="datePicker">
+      <div id="calendarContainer" style="display: none; background-color: rgb(87, 75, 75); padding: 20px;">
+        <div id="calendar" class="calendar"></div>
+      </div>
+      <button id="openDatePicker"
+        class="w-full block mt-10 mx-auto p-4 rounded-[3rem] bg-fuchsia text-white mb-8 font-bold text-sm lg:text-xl">
+        Submit & Book Appointment
+      </button>
+
+
+      <a href="preference.html">
+        <button id=""
+          class="w-full block mt-10  mx-auto p-4 rounded-[3rem] bg-black bg-opacity-50 text-white mb-40 font-bold text-sm lg:text-xl">
+          Previous
+        </button>
+      </a>
+    </div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const openDatePickerButton = document.getElementById("openDatePicker");
+    const calendarContainer = document.getElementById("calendarContainer");
+    const datePickerInput = document.getElementById("datePicker");
+
+    openDatePickerButton.addEventListener("click", function () {
+      calendarContainer.style.display = "block";
+
+      flatpickr("#calendar", {
+        inline: true,
+        onChange: function (selectedDates) {
+          const selectedDate = selectedDates[0];
+          datePickerInput.value = selectedDate.toISOString().split('T')[0];
+
+          window.location.href = "booking-complete.html";
+        },
+      });
+    });
+
+    const slider = document.getElementById("slider");
+    const sliderValue = document.getElementById("sliderValue");
+    const sliderLength = slider.offsetWidth;
+
+    slider.addEventListener("input", function () {
+      const value = slider.value;
+      const percent = ((value - slider.min) / (slider.max - slider.min)) * 100;
+      sliderValue.textContent = value;
+      sliderValue.style.left = `calc(${percent}% - ${sliderValue.offsetWidth / 4}px)`;
+    });
+  });
+</script>
+<script>
+  const datePicker = document.getElementById('datePicker')
+  const openDatePicker = document.getElementById('openDatePicker')
+  openDatePicker.addEventListener("click", function () {
+    datePicker.style.display = 'block'
+  });
+</script>
+<script src="script.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/src/slick/slick.min.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>

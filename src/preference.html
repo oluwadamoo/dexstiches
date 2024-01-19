@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    .shirt-radios .radio {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .shirt-radios input[type="radio"] {
+      display: none;
+    }
+
+    .shirt-radios input[type="radio"]:checked+.radio {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="w-full">
+    <div class="w-[90%] md:w-[60%] lg:w-[40%] mx-auto z-10 relative">
+      <div class="flex justify-between items-center my-10">
+        <img src="assets/tag.png" alt="" class="w-12 h-12" />
+        <img src="assets/seventy_five.png" alt="" class="w-40 h-40" />
+      </div>
+      <h3 class="font-bold text-center text-2xl md:text-3xl my-8 w-[90%] mx-auto">
+        Lets know how you prefer to dress
+      </h3>
+
+      <!-- Shirt -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">What is your shirt | T-shirt size?</label>
+        <form class="radios mb-6 grid grid-cols-7 gap-4">
+          <input type="radio" name="rGroup" value="1" id="shirt1" />
+          <label for="shirt1"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            S</label>
+          <input type="radio" name="rGroup" value="2" id="shirt2" />
+          <label for="shirt2"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            M</label>
+          <input type="radio" name="rGroup" value="3" id="shirt3" />
+          <label for="shirt3"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            L</label>
+          <input type="radio" name="rGroup" value="4" id="shirt4" />
+          <label for="shirt4"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            XL</label>
+          <input type="radio" name="rGroup" value="5" id="shirt5" />
+          <label for="shirt5"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            XXL</label>
+          <input type="radio" name="rGroup" value="6" id="shirt6" />
+          <label for="shirt6"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            3XL</label>
+          <input type="radio" name="rGroup" value="7" id="shirt7" />
+          <label for="shirt7"
+            class="radio  h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            <span class="block my-auto">Others</span></label>
+        </form>
+      </div>
+
+      <!-- Trouser -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">What is your trouser size?</label>
+        <form class="shirt-radios mb-6 grid grid-cols-7 gap-4">
+          <input type="radio" name="rGroup" value="1" id="trouser1" />
+          <label for="trouser1"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            31</label>
+          <input type="radio" name="rGroup" value="2" id="trouser2" />
+          <label for="trouser2"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            32</label>
+          <input type="radio" name="rGroup" value="3" id="trouser3" />
+          <label for="trouser3"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            33</label>
+          <input type="radio" name="rGroup" value="4" id="trouser4" />
+          <label for="trouser4"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            34</label>
+          <input type="radio" name="rGroup" value="5" id="trouser5" />
+          <label for="trouser5"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            36</label>
+          <input type="radio" name="rGroup" value="6" id="trouser6" />
+          <label for="trouser6"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            36</label>
+          <input type="radio" name="rGroup" value="7" id="trouser7" />
+          <label for="trouser7"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            40</label>
+          <input type="radio" name="rGroup" value="8" id="trouser8" />
+          <label for="trouser8"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            42</label>
+          <input type="radio" name="rGroup" value="9" id="trouser9" />
+          <label for="trouser9"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            44</label>
+          <input type="radio" name="rGroup" value="10" id="trouser10" />
+          <label for="trouser10"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Others</label>
+        </form>
+      </div>
+
+      <!-- Shoe -->
+      <div class="mb-14 w-full">
+        <label for="" class="my-4 block font-bold">Shoe size?</label>
+        <form class="shirt-radios mb-6 grid grid-cols-7 gap-4">
+          <input type="radio" name="rGroup" value="1" id="shoe1" />
+          <label for="shoe1"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            39</label>
+          <input type="radio" name="rGroup" value="2" id="shoe2" />
+          <label for="shoe2"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            40</label>
+          <input type="radio" name="rGroup" value="3" id="shoe3" />
+          <label for="shoe3"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            41</label>
+          <input type="radio" name="rGroup" value="4" id="shoe4" />
+          <label for="shoe4"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            42</label>
+          <input type="radio" name="rGroup" value="5" id="shoe5" />
+          <label for="shoe5"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            43</label>
+          <input type="radio" name="rGroup" value="6" id="shoe6" />
+          <label for="shoe6"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            44</label>
+          <input type="radio" name="rGroup" value="7" id="shoe7" />
+          <label for="shoe7"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            45</label>
+          <input type="radio" name="rGroup" value="8" id="shoe8" />
+          <label for="shoe8"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            46</label>
+          <input type="radio" name="rGroup" value="9" id="shoe9" />
+          <label for="shoe9"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            47</label>
+          <input type="radio" name="rGroup" value="10" id="shoe10" />
+          <label for="shoe10"
+            class="radio p-2  !flex items-center justify-center h-[3rem] w-[3rem] md:h-[4.2rem] md:w-[4.2rem] flex justify-center text-xs md:text-lg items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Others</label>
+        </form>
+      </div>
+
+      <!-- Jeans -->
+      <div class="mb-14 md:w-[80%] w-full">
+        <label for="" class="my-4 block font-bold">How fitted do you like your Jeans, Pants & Chinos?</label>
+        <form class="radios mb-6 grid grid-cols-2 gap-4">
+          <input type="radio" name="rGroup" value="1" id="jeans1" />
+          <label for="jeans1"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Slim fit</label>
+          <input type="radio" name="rGroup" value="2" id="jeans2" />
+          <label for="jeans2"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Regular fit</label>
+          <input type="radio" name="rGroup" value="3" id="jeans3" />
+          <label for="jeans3"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Oversized</label>
+          <input type="radio" name="rGroup" value="4" id="jeans4" />
+          <label for="jeans4"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            All of the above</label>
+        </form>
+      </div>
+
+      <!-- Shorts -->
+      <div class="mb-14 md:w-[80%] w-full">
+        <label for="" class="my-4 block font-bold">How long do you like your shorts?</label>
+        <form class="radios mb-6 grid grid-cols-2 gap-4">
+          <input type="radio" name="rGroup" value="1" id="shorts1" />
+          <label for="shorts1"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Above the knee</label>
+          <input type="radio" name="rGroup" value="2" id="shorts2" />
+          <label for="shorts2"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Both</label>
+          <input type="radio" name="rGroup" value="3" id="shorts3" />
+          <label for="shorts3"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            I don't wear shorts</label>
+          <input type="radio" name="rGroup" value="4" id="shorts4" />
+          <label for="shorts4"
+            class="radio p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            All of the above</label>
+        </form>
+      </div>
+
+      <div class="mb-14 w-[55%]">
+        <label for="" class="my-4 block font-bold">What is your height?</label>
+        <input type="number"
+          class="p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg text-center" />
+      </div>
+
+      <!-- Wears -->
+      <div class="mb-24 w-full">
+        <label for="" class="my-4 block font-bold">What wears are you looking to shop for on your next appointment
+          ?</label>
+        <form class="radios mb-6 grid grid-cols-3 gap-4">
+          <input type="checkbox" name="rGroup" value="1" id="variety1" />
+          <label for="variety1"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Tee shirts</label>
+          <input type="checkbox" name="rGroup" value="2" id="variety2" />
+          <label for="variety2"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Sweatshirts</label>
+          <input type="checkbox" name="rGroup" value="3" id="variety3" />
+          <label for="variety3"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Shorts</label>
+          <input type="checkbox" name="rGroup" value="4" id="variety4" />
+          <label for="variety4"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Formal shirts</label>
+          <input type="checkbox" name="rGroup" value="5" id="variety5" />
+          <label for="variety5"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Casual shirts</label>
+          <input type="checkbox" name="rGroup" value="6" id="variety6" />
+          <label for="variety6"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Vintage shirts</label>
+          <input type="checkbox" name="rGroup" value="7" id="variety7" />
+          <label for="variety7"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Short sleeve top</label>
+          <input type="checkbox" name="rGroup" value="8" id="variety8" />
+          <label for="variety8"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Long sleeve top</label>
+          <input type="checkbox" name="rGroup" value="9" id="variety9" />
+          <label for="variety9"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Underwears</label>
+          <input type="checkbox" name="rGroup" value="10" id="variety10" />
+          <label for="variety10"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Perfume</label>
+          <input type="checkbox" name="rGroup" value="11" id="variety11" />
+          <label for="variety11"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Accessories</label>
+          <input type="checkbox" name="rGroup" value="12" id="variety12" />
+          <label for="variety12"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Watches</label>
+          <input type="checkbox" name="rGroup" value="13" id="variety13" />
+          <label for="variety13"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Hausa | Kanuri caps</label>
+          <input type="checkbox" name="rGroup" value="14" id="variety14" />
+          <label for="variety14"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            Khaftan | Senator sets</label>
+          <input type="checkbox" name="rGroup" value="15" id="variety15" />
+          <label for="variety15"
+            class="checkbox p-4 h-[4rem] text-xs md:text-lg lg:w-[12rem] flex justify-center items-center border-[1px] border-black outline-none rounded-lg hover:bg-black hover:text-white hover:font-bold text-center cursor-pointer">
+            All of the above</label>
+        </form>
+      </div>
+
+      <a href="plans.html">
+        <button id=""
+          class="w-full block mt-10 mx-auto p-4 rounded-[3rem] bg-black text-white mb-8 font-bold text-sm lg:text-2xl">
+          Proceed to Your Shopping Plans & Routines
+        </button>
+      </a>
+      <a href="info.html">
+        <button id=""
+          class="w-full block mt-10 mx-auto p-4 rounded-[3rem] bg-black bg-opacity-50 text-white mb-8 font-bold text-sm lg:text-2xl">
+          Previous
+        </button>
+      </a>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>

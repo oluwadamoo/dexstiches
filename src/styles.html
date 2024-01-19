@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <div class="w-full ">
+    <div class="w-[95%] mx-auto py-4 mt-4 flex md:justify-between items-center z-20 relative bg-[#fafafa]">
+      <div id="toggleSidebar" class="md:hidden px-4 py-2 mr-2">
+        <img src='./assets/hamburger.png' alt="" class="h-8 cursor-pointer">
+      </div>
+      <h2 class="font-extrabold text-3xl cursor-pointer">DexStitches</h2>
+      <div class="flex items-center ml-auto">
+        <img src="./assets/Notification.png" alt="" class="mr-6 h-[1.1rem] cursor-pointer" />
+        <img src="./assets/bookmark.png" alt="" class="mr-6 h-[1.1rem] cursor-pointer" />
+        <h3 class="font-bold text-[0.88rem] cursor-pointer">Aliko Dangote</h3>
+      </div>
+    </div>
+    <div class="flex w-[90%] mx-auto mt-2">
+      <div class="w-[250px] py-3 px-8 sidebar hidden
+            md:block fixed inset-0 shadow-lg md:shadow-none bg-[#fafafa] z-10">
+        <div class="mt-20 pl-8">
+          <a href="dashboard.html">
+            <div class="flex items-center py-4 cursor-pointer">
+              <img src="./assets/home.png" alt="" class="mr-4 h-6" />
+              <p class="text-[0.875rem]">Dashboard</p>
+            </div>
+          </a>
+          <a href="appointments.html">
+            <div class="flex items-center py-4 cursor-pointer">
+              <img src="./assets/star.png" alt="" class="mr-4 h-6" />
+              <p class="text-[0.875rem]">Appointments</p>
+            </div>
+          </a>
+          <a href="styles.html" class="active">
+            <div class="flex items-center py-4 cursor-pointer">
+              <img src="./assets/star.png" alt="" class="mr-4 h-6" />
+              <p class="text-[0.875rem]">My Style</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="md:w-full md:ml-[250px] mx-auto w-[90%] main">
+        <h2 class="font-[500] text-3xl mt-16 md:mt-40 mb-4">My Style</h2>
+        <div class="flex justify-between my-4">
+          <div class="w-[300px] flex items-center px-2 border-2 border-[#efeaea] rounded-lg h-10">
+            <img src="./assets/search.png" alt="" class="h-[1.2rem] mr-4">
+            <input type="text" placeholder="Search style..." class="w-[200px] border-0 outline-none">
+          </div>
+          <div class="flex">
+            <img src="./assets/download.png" alt="" class="h-11 cursor-pointer mr-2">
+            <img src="./assets/book2.png" alt="" class="h-11 cursor-pointer">
+
+          </div>
+        </div>
+        <table class="text-[0.85rem]">
+          <thead>
+            <tr>
+              <th><input type="checkbox"></th>
+              <th class="">Style Name</th>
+              <th>Time</th>
+              <th>Budget</th>
+              <th>Quantity</th>
+              <th>Shopping Routine</th>
+              <th class="w-[30%]">Preferred Shopping Profile</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Free size shopping</td>
+              <td>15:30</td>
+              <td>100k - 200k</td>
+              <td>20 - 30</td>
+              <td>
+                <select id="frequencyDropdown" class="outline-none">
+                  <option value="weekly">Weekly</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="quarterly">Quarterly</option>
+                  <option value="yearly">Yearly</option>
+                </select>
+              </td>
+
+              <td class="flex ">
+                <label class="switch mr-auto">
+                  <input type="checkbox" checked>
+                  <span class="length round"></span>
+                </label>
+                <p class="mr-6">...</p>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Slim fit fashion</td>
+              <td>15:30</td>
+              <td>250k - 500k</td>
+              <td>20 - 30</td>
+              <td>
+                <select id="frequencyDropdown" class="outline-none">
+                  <option value="weekly">Weekly</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="quarterly">Quarterly</option>
+                  <option value="yearly">Yearly</option>
+                </select>
+              </td>
+
+              <td class="flex ">
+                <label class="switch mr-auto">
+                  <input type="checkbox" checked>
+                  <span class="length round"></span>
+                </label>
+                <p class="mr-6">...</p>
+              </td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+        <div class="w-full h-20 p-2 border-[1px] border-[#efeaea]">
+          <div class="w-[90%] mx-auto flex mt-2">
+            <div class="p-2 text-[0.85rem] text-[#353542] bg-[#3535421A] cursor-pointer rounded-lg flex justify-center">
+              Duplicate
+              selection</div>
+            <div
+              class="p-2  text-[0.85rem] text-[#FF0100] bg-[#FFF0F0] cursor-pointer rounded-lg mr-4 ml-auto flex justify-center">
+              <span><img src="./assets/Delete.png" alt="" class="mr-2"></span> Delete
+            </div>
+            <div class="p-2 text-[0.85rem] text-[#fff] bg-[#000] cursor-pointer rounded-lg flex justify-center">
+              <span><img src="./assets/rebook.png" alt="" class="mr-2"></span> Rebook with selected
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleSidebarButton = document.getElementById("toggleSidebar");
+    const sidebar = document.querySelector(".sidebar");
+    const main = document.querySelector(".main");
+    toggleSidebarButton.addEventListener("click", function () {
+      if (sidebar.style.display === "block") {
+        sidebar.style.display = "none";
+      } else {
+        sidebar.style.display = "block";
+      }
+    });
+  });
+</script>
+<script src="script.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/src/slick/slick.min.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>

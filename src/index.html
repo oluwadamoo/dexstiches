@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/src/slick/slick.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <div class="">
+    <!-- Lock -->
+    <div id="lock"
+      class="hidden h-full w-full p-8 text-white bg-black fixed z-50 inset-0 bg-opacity-90 text-center overflow-auto">
+      <div class="w-[90%]  md:w-[50%] mx-auto flex flex-col items-center">
+        <img src="assets/lock.png" alt="" class="block w-[8rem] h-[10rem] my-72" />
+
+
+        <form action="" class="w-full" id="loginForm">
+          <label for="emailInput" class="font-bold lg:text-3xl md:text-2xl text-xl mb-6">Enter email</label>
+          <input type="email" id="emailInput"
+            class="block  w-[100%] md:w-[80%] mx-auto p-4 border-white border-[3px] rounded-[3rem] bg-[transparent] mb-6" />
+          <div id="emailError" class="error-message mb-8 text-yellow"></div>
+
+          <label for="passwordInput" class="font-bold lg:text-3xl md:text-2xl text-xl mb-6">Password</label>
+          <input type="password" id="passwordInput"
+            class="block  w-[100%] md:w-[80%] mx-auto p-4 border-white border-[3px] rounded-[3rem] bg-[transparent] mb-6" />
+          <div id="passwordError" class="error-message mb-8 text-yellow"></div>
+
+          <label for="" class="font-bold lg:text-3xl md:text-2xl text-xl mt-8 mb-6">Enter passcode</label>
+          <div class="flex items-center justify-center gap-6 w-[100%] md:w-[200px] mt-6 mb-20 ">
+            <input id="input1" type=""
+              class="pass-input h-12 w-12 p-2 text-xl text-center font-bold  rounded-full bg-white text-black outline-fuchsia" />
+            <input id="input2" type=""
+              class="pass-input h-12 w-12 p-2 text-xl text-center font-bold  rounded-full bg-white text-black outline-fuchsia" />
+            <input id="input3" type=""
+              class="pass-input h-12 w-12 p-2 text-xl text-center font-bold  rounded-full bg-white text-black outline-fuchsia" />
+            <input id="input4" type=""
+              class="pass-input h-12 w-12 p-2 text-xl text-center font-bold  rounded-full bg-white text-black outline-fuchsia" />
+          </div>
+
+          <button id="login"
+            class="block  w-[100%] md:w-[80%] mx-auto p-4 rounded-[3rem] bg-white text-black mb-8 font-bold lg:text-2xl md:text-xl text-lg">
+            Log In
+          </button>
+        </form>
+
+
+
+        <p class="font-bold sm:text-xl text-[0.85rem] leading-10 mt-20 mb-40">
+          Hint:<br />
+          Input your log in email then password on Dexstitches.com & passcode
+          from your VIP card to gain access
+        </p>
+
+        <img src="assets/lock.png" alt="" class="block w-[8rem] h-[10rem] my-72" />
+        <img src="assets/lock.png" alt="" class="block w-[8rem] h-[10rem] my-72" />
+      </div>
+    </div>
+
+    <!--Desktop Header -->
+    <div class="w-full hidden md:block pt-10 bg-fuchsia md:bg-[#fafafa] text-center md:text-left">
+      <div class="w-[75%] mx-auto">
+        <img src="assets/logo.png" alt="" class="hidden md:inline-block w-[150px] md:w-[200px]" />
+        <img src="assets/dexstitchlogo2.png" alt="" class="inline-block md:hidden w-[150px] md:w-[200px] mx-auto" />
+      </div>
+    </div>
+    <!-- Desktop Landing -->
+    <div class="first  hidden lg:w-[78%]  w-[100%] md:w-[80%] mx-auto md:grid grid-cols-2 gap-2 pb-10 mb-16 md:mb-32">
+      <div class="lg:py-8 ">
+        <h1
+          class="text-2xl md:text-3xl leading-[3rem] lg:text-4xl xl:text-5xl font-bold leading-40 mt-16 lg:mt-24 mb-6">
+          What if the outlet can be<br />
+          shut down just for you to <br />shop ?
+        </h1>
+        <p class="md:text-xl lg:text-2xl  font-normal max-w-[400px] mb-8">
+          We are pioneering exclusive fashion <br />
+          shopping platform in Africa. <br />For the first time you get to
+          experience <br />
+          shopping as a VIP where we make <br />
+          everything about YOU !
+        </p>
+
+        <button id="book"
+          class="book w-48 h-16 mt-4 font-bold rounded border-2 text-fuchsia border-fuchsia hover:bg-fuchsia hover:text-white hover:border-none">
+          Book Now
+        </button>
+      </div>
+      <div class="right w-full">
+        <img src="assets/image170 - Copy.png"
+          class="block h-[60%] mt-[5rem] md:mt-0  w-full  md:h-[85%] lg:w-full mx-auto rounded-[1.25rem] border-fuchsia border-[5px]"
+          alt="" />
+        <h1 class="special  text-[2.5rem] lg:text-[4rem] font-[600] text-center leading-[3.5rem] mt-[-15px]">
+          You are Special! <br />you deserve to be treated different !
+        </h1>
+      </div>
+    </div>
+
+    <!-- Mobile Landing -->
+    <div style="
+          background-image: url('assets/image170\ -\ Copy.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        " class="w-full h-[500px] relative md:hidden">
+
+      <div
+        class="h-full w-full flex justify-center items-start text-neutral bg-black absolute inset-0 bg-opacity-70 text-center">
+        <div class=" w-[90%] mx-auto">
+          <div class="w-full h-[50px] md:h-[70px] text-center md:text-left mt-4">
+            <div class="w-[75%] mx-auto py-4">
+              <img src="assets/dexstitchlogo2.png" alt=""
+                class="inline-block md:hidden w-[150px] md:w-[200px] mx-auto" />
+            </div>
+          </div>
+          <h1 class="max-w- text-[1.7rem] font-bold mt-8  mb-6">
+            What if the outlet can be shut down just for you to <span class="md:block">shop ?</span>
+          </h1>
+          <p class="text-xl font-normal mb-2">
+            We are pioneering exclusive fashion shopping platform in Africa.
+            <br />For the first time you get to experience shopping as a VIP
+            where we make everything about YOU !
+          </p>
+          <button
+            class="book w-48 h-16 mt-4 mb-16 font-bold rounded outline-none text-white border-fuchsia border-4 hover:bg-fuchsia">
+            Book Now
+          </button>
+
+          <h1
+            class="special px-4 text-[2rem] lg:text-[4rem] font-[600] text-center leading-[3.5rem] mt-16 hover:text-[#FFB800]">
+            You are Special! <br />you deserve to be treated different !
+          </h1>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Second -->
+    <div class="w-full h-[350px] sm:h-[600px] md:h-[80vh] lg:h-[100vh] md:mb-16 bg-neutral relative pt-14">
+      <div class=" w-[100%] md:w-[80%] mx-auto relative h-full">
+        <img src="assets/turtledove.png" class="absolute bottom-[2.5rem] left-[-6rem] hidden md:inline-block  h-[91.5%]"
+          alt="" />
+
+        <div class="h-full">
+          <h1
+            class="ml-auto mt-10  lg:w-[50%] text-center md:text-right text-xl sm:text-2xl md:text-[1.8rem] lg:text-4xl font-bold leading-14 mb-8">
+            Enjoy VIP Privileges' like <br />
+            <span class="text-fuchsia">.dedicated stylist </span>.unlimited
+            <br />
+            varieties of formal wears, casual <br />
+            wears, khaftan & accessories <br>
+            <span class="text-fuchsia">.monthly supply (subscription) <br /> </span>.free home delivery
+            <span class="text-fuchsia"> & more</span>
+          </h1>
+          <div class="ml-auto flex lg:h-[55%] md:w-[70%] mb-0 mt-auto absolute bottom-[2.5rem] right-0">
+            <img src="assets/image1.png" alt="" class="w-[20%]" />
+            <img src="assets/image2.png" alt="" class="w-[20%]" />
+            <img src="assets/image3.png" alt="" class="w-[20%]" />
+            <img src="assets/image4.png" alt="" class="w-[20%]" />
+            <img src="assets/image5.png" alt="" class="w-[20%]" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third -->
+    <div class="w-[75%]  lg:h-[90vh] mx-auto mb-16 lg:mb-16 md:mb-4 pt-10">
+      <h1 class="text-2xl md:text-4xl mt-10 font-bold mb-12 text-center">
+        What to expect on your next appointment
+      </h1>
+      <div class="md:grid grid-cols-3 gap-8">
+        <div class="card bg-white rounded-[2rem] p-8 lg:p-16 box mb-8 md:mb-[50%]">
+          <img src="assets/privacy.png" alt="" class="mb-4 lg:mb-10 h-10" />
+          <h3 class="mb-2 md:mb-8 font-bold text-xl">Privacy & Exclusivity</h3>
+          <p class="mb-6">Fashion varieties all just for you!</p>
+          <button class="book w-full mt-auto h-16 bg-gradient-to-b from-black to-fuchsia rounded-[3rem] text-white">
+            Discover
+          </button>
+        </div>
+        <div class="card bg-white rounded-[2rem] p-8 lg:p-16 box mb-8 md:mb-[50%] flex flex-col">
+          <div>
+            <img src="assets/entertainment.png" alt="" class="mb-4 lg:mb-10 h-10" />
+          </div>
+          <h3 class="mb-2 md:mb-8 font-bold text-xl">Entertainment & Chill</h3>
+          <p class="mb-6">Wine, netflix & video game breaks</p>
+          <button class="book w-full mt-auto h-16 bg-gradient-to-b from-black to-fuchsia rounded-[3rem] text-white">
+            Discover
+          </button>
+        </div>
+        <div class="card bg-white rounded-[2rem] p-8 lg:p-16 box mb-8 md:mb-[50%] flex flex-col">
+          <div>
+            <img src="assets/wifi.png" alt="" class="mb-4 lg:mb-10  h-10" />
+          </div>
+          <h3 class="mb-2 md:mb-8 font-bold text-xl">Free wifi</h3>
+          <p class="mb-6">Enjoy internet while shopping</p>
+          <button class="book w-full mt-auto h-16 bg-gradient-to-b from-black to-fuchsia rounded-[3rem] text-white">
+            Book Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth -->
+    <div class="bg-white w-full  lg:h-[90vh] pt-14 md:py-32 mb-16 lg:mb-16 md:mb-4">
+      <div class="fifth h-full w-[75%] mx-auto mb-16 md:grid grid-cols-2 gap-8 text-center md:text-left">
+        <div class=" pt-8 lg:pt-16">
+          <p class="mb-4 text-xl md:text-lg">Bespoke fashion shopping made easy</p>
+          <h1 class="font-bold text-xl sm:text-2xl md:text-[1.8rem] lg:text-[2.7rem] lg:leading-[3rem] mb-6">
+            Shop classic <span class="text-fuchsia">& new fashion <br></span> from
+            your favorite brands <br> around the world in your size, <br> style & budget
+            in one visit
+          </h1>
+          <p class="mb-6">
+            Buy Clothes from Jack&Jones , Lacoste, Calvin klein, Boohoo, Polo
+            Ralph Lauren, Zara, Selected, Nike, Adidas,Tommy & top international
+            designers globally
+          </p>
+
+        </div>
+        <div class="w-full">
+          <img src="assets/image 172.png"
+            class="fifth-img w-full rounded-[1.25rem] h-[100%] md:h-[90%] border-fuchsia border-[5px]" alt="" />
+        </div>
+
+      </div>
+    </div>
+
+    <!-- <div class="w-full h-20 bg-white m-0 p-0">
+
+    </div> -->
+
+    <!-- Fifth -->
+    <div style="
+          background-image: url('assets/background.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        " class="fourth mb-16 lg:h-[100vh] w-full md:pt-16 lg:pt-12 p-16 md:py-32">
+      <h1 class="text-white text-2xl md:text-4xl lg:text-5xl font-bold md:mb-8 mb-0 mt-16 text-center leading-10">
+        Dexstitches VIP is for
+        <span id="image-container">
+          <img alt="" id="change-image" class="image inline h-[4rem] lg:h-[7rem] mb-[7px] lg:mb-[10px]" />
+        </span>
+      </h1>
+      <div class="flex justify-center items-center w-full">
+        <div class="flex justify-center items-center w-[300px]">
+          <img src="assets/Avatar/vip2.png" alt="" class="h-12 w-12 rounded-full" />
+          <img src="assets/Avatar/vip4.png" alt="" class="h-12 w-12 rounded-full ml-[-7px]" />
+          <img src="assets/Avatar/vip1.png" alt="" class="h-12 w-12 rounded-full ml-[-7px]" />
+          <img src="assets/Avatar/vip3.png" alt="" class="h-12 w-12 rounded-full ml-[-7px]" />
+        </div>
+      </div>
+      <h3
+        class="w-[90%] md:w-[70%] mx-auto mb-6 text-center text-white text-lg sm:text-xl  md:text-2xl font-medium mt-4">
+        We got feedbacks from some of our previous VIPs before and after their <br>
+        appointments & here is what they said..
+      </h3>
+      <!-- Slider -->
+      <div class="py-6 mb-6">
+        <div class="autoplay">
+          <div class="mr-4  text-white box2 card">
+            <span class="mb-4 lg:mb-6 text-sm lg:text-lg a">
+              Most Nikes online are 95% fake or not in my size. How i go fit
+              buy original Nike now.
+            </span><span class="mb-4 lg:mb-6 text-sm lg:text-lg b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reprehenderit at eum.
+            </span>
+
+            <p class="mb-4">
+              Micheal Afolabi <span class="opacity-40 ml-4">Feb 20</span>
+            </p>
+          </div>
+          <div class="mr-4  text-white box2 card">
+            <span class="mb-4 lg:mb-6 text-sm lg:text-lg a">
+              Most Nikes online are 95% fake or not in my size. How i go fit
+              buy original Nike now.
+            </span><span class="mb-4 lg:mb-6 text-sm lg:text-lg b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reprehenderit at eum.
+            </span>
+
+            <p class="mb-4">
+              Micheal Afolabi <span class="opacity-40 ml-4">Feb 20</span>
+            </p>
+          </div>
+          <div class="mr-4  text-white box2 card">
+            <span class="mb-4 lg:mb-6 text-sm lg:text-lg a">
+              Most Nikes online are 95% fake or not in my size. How i go fit
+              buy original Nike now.
+            </span><span class="mb-4 lg:mb-6 text-sm lg:text-lg b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reprehenderit at eum.
+            </span>
+
+            <p class="mb-4">
+              Micheal Afolabi <span class="opacity-40 ml-4">Feb 20</span>
+            </p>
+          </div>
+          <div class="mr-4  text-white box2 card">
+            <span class="mb-4 lg:mb-6 text-sm lg:text-lg a">
+              Most Nikes online are 95% fake or not in my size. How i go fit
+              buy original Nike now.
+            </span><span class="mb-4 lg:mb-6 text-sm lg:text-lg b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reprehenderit at eum.
+            </span>
+
+            <p class="mb-4">
+              Micheal Afolabi <span class="opacity-40 ml-4">Feb 20</span>
+            </p>
+          </div>
+          <div class="mr-4  text-white box2 card">
+            <span class="mb-4 lg:mb-6 text-sm lg:text-lg a">
+              Most Nikes online are 95% fake or not in my size. How i go fit
+              buy original Nike now.
+            </span><span class="mb-4 lg:mb-6 text-sm lg:text-lg b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reprehenderit at eum.
+            </span>
+
+            <p class="mb-4">
+              Micheal Afolabi <span class="opacity-40 ml-4">Feb 20</span>
+            </p>
+          </div>
+          <div class="mr-4  text-white box2 card">
+            <span class="mb-4 lg:mb-6 text-sm lg:text-lg a">
+              Most Nikes online are 95% fake or not in my size. How i go fit
+              buy original Nike now.
+            </span><span class="mb-4 lg:mb-6 text-sm lg:text-lg b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reprehenderit at eum.
+            </span>
+
+            <p class="mb-4">
+              Micheal Afolabi <span class="opacity-40 ml-4">Feb 20</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Sixth -->
+  <div class="bg-white w-full  lg:h-[90vh] py-16 md:pt-32 md:pb-16">
+    <div
+      class="fifth h-full  lg:w-[85%]  w-[100%] md:w-[80%] mx-auto mb-16 lg:grid grid-cols-2 gap-8 text-center md:text-left">
+      <div class="w-full  lg:pb-[20%] lg:pb-[50%]">
+        <img src="assets/image 172.png" class="fifth-img w-full rounded-[1.25rem] h-[100%] border-fuchsia border-[5px]"
+          alt="" />
+      </div>
+      <div class=" pt-8 lg:pt-16 px-2">
+        <p class="mb-4 mt-4 lg:mt-0 md:mt-0 text-xl md:text-lg">As a Dexstitches VIP</p>
+        <h1 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-6">
+          Shop classic <span class="text-fuchsia">& new fashion</span><br> from
+          your favorite brands <br> around the world in your size, <br> style & budget
+          in one visit
+        </h1>
+        <p class="mb-6 ">
+          Buy Clothes from Jack&Jones , Lacoste, Calvin klein, Boohoo, Polo
+          Ralph Lauren, Zara, Selected, Nike, Adidas,Tommy & top international
+          designers globally
+        </p>
+        <div class="circle-div flex justify-center md:justify-start flex-nowrap md:flex-wrap lg:gap-4 md:gap-2 gap-4">
+          <div
+            class="lg:h-[4.2rem] w-[1.5rem] sm:w-[2.5rem] lg:w-[4.2rem] h-[1.5rem] sm:h-[2.5rem] flex justify-center items-center  p-2 rounded-full bg-black">
+            <img src="assets/polo.png" class="h-4 sm:h-8 md:h-12" alt="" />
+          </div>
+          <div
+            class="lg:h-[4.2rem] w-[1.5rem] sm:w-[2.5rem] lg:w-[4.2rem] h-[1.5rem] sm:h-[2.5rem] flex justify-center items-center  p-2 rounded-full bg-black">
+            <img src="assets/ralph.png" alt="" class="h-3" />
+          </div>
+          <div
+            class="lg:h-[4.2rem] w-[1.5rem] sm:w-[2.5rem] lg:w-[4.2rem] h-[1.5rem] sm:h-[2.5rem] flex justify-center items-center  p-2 rounded-full bg-black">
+            <img src="assets/lacoste.png" alt="" />
+          </div>
+          <div
+            class="lg:h-[4.2rem] w-[1.5rem] sm:w-[2.5rem] lg:w-[4.2rem] h-[1.5rem] sm:h-[2.5rem] flex justify-center items-center  p-2 rounded-full bg-black">
+            <img src="assets/nike.png" alt="" />
+          </div>
+          <div
+            class="lg:h-[4.2rem] w-[1.5rem] sm:w-[2.5rem] lg:w-[4.2rem] h-[1.5rem] sm:h-[2.5rem] flex justify-center items-center  p-2 rounded-full bg-black">
+            <img src="assets/bespoke.png" alt="" />
+          </div>
+          <div
+            class="lg:h-[4.2rem] w-[1.5rem] sm:w-[2.5rem] lg:w-[4.2rem] h-[1.5rem] sm:h-[2.5rem] flex justify-center items-center  p-2 rounded-full bg-fuchsia">
+            <p class="lg:text-xs text-[4px] sm:text-[0.5rem] text-white">& MORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full hidden lg:block h-20 bg-white m-0 p-0"></div>
+
+
+  <!-- Footer -->
+  <div style="
+       background-image: url('assets/background3.png');
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+     " class="w-full py40 relative h-[500px] lg:h-[100vh] pb-32">
+    <div class="h-full w-full flex justify-center  bg-neutral absolute inset-0 bg-opacity-90">
+      <div class=" w-[100%] md:w-[80%] lg:w-[30%] mx-auto text-center z-10">
+        <h1 class="text-2xl md:text-4xl font-bold my-[6rem] md:mb-12 md:mt-[11rem]">
+          At Dexstitches, we believe <br> shopping should always be <br>
+          <span class="text-fuchsia"> fun, private & personalized. </span> <br>
+          You deserve that experience.
+        </h1>
+        <button id="schedule"
+          class="book p-4 mb-6 text-xs md:text-lg md:mb-12 text-white rounded w-[14rem] md:w-[19rem] h-16 bg-fuchsia">
+          Schedule Your Appointment
+        </button>
+        <div class=" flex justify-center items-center w-full md:w-[70%] mx-auto md:mt-10">
+          <img src="assets/playstore.png" alt="" class="cursor-pointer block button h-14 md:h-16 w-32 md:w-44 mr-4" />
+          <img src="assets/appstore.png" alt="" class="cursor-pointer block button h-14 md:h-16 w-32 md:w-44" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+<script>
+  const img = document.getElementById("change-image");
+  const cycleImages = ["assets/Japa.png", "assets/enthusiasts.png"];
+
+  async function cycle() {
+    img.src = cycleImages[0];
+    await new Promise((r) => setTimeout(r, 2000));
+    img.src = cycleImages[1];
+    await new Promise((r) => setTimeout(r, 2000));
+
+    cycle();
+  }
+  cycle();
+</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/src/slick/slick.min.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <div class="w-full">
+    <div class="w-[95%] mx-auto py-4 mt-4 flex md:justify-between items-center z-20 relative bg-[#fafafa]">
+      <div id="toggleSidebar" class="md:hidden px-4 py-2 mr-2">
+        <img src='./assets/hamburger.png' alt="" class="h-8 cursor-pointer">
+      </div>
+      <h2 class="font-extrabold sm:text-3xl text-2xl cursor-pointer">DexStitches</h2>
+      <div class="flex items-center ml-auto">
+        <img src="./assets/Notification.png" alt="" class="mr-6 h-[1.1rem] cursor-pointer" />
+        <img src="./assets/bookmark.png" alt="" class="mr-6 h-[1.1rem] cursor-pointer" />
+        <h3 class="font-bold text-[0.88rem] cursor-pointer">Aliko Dangote</h3>
+      </div>
+    </div>
+    <div class="flex w-[90%] mx-auto mt-2">
+      <div class="w-[250px] py-3 px-8 sidebar hidden md:block fixed inset-0 shadow-lg md:shadow-none bg-[#fafafa] z-10">
+        <div class="mt-20 pl-8">
+          <a href="dashboard.html" class="active">
+            <div class="flex items-center py-4 cursor-pointer">
+              <img src="./assets/home.png" alt="" class="mr-4 h-6" />
+              <p class="text-[0.875rem]">Dashboard</p>
+            </div>
+          </a>
+          <a href="appointments.html">
+            <div class="flex items-center py-4 cursor-pointer">
+              <img src="./assets/star.png" alt="" class="mr-4 h-6" />
+              <p class="text-[0.875rem]">Appointments</p>
+            </div>
+          </a>
+          <a href="styles.html">
+            <div class="flex items-center py-4 cursor-pointer">
+              <img src="./assets/star.png" alt="" class="mr-4 h-6" />
+              <p class="text-[0.875rem]">My Style</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="md:w-full md:ml-[250px] mx-auto w-[90%] main">
+        <h2 class="font-[500] sm:text-3xl text-2xl cursor-pointer mt-8">Hello Aliko,</h2>
+        <h2 class="font-[500] sm:text-3xl text-2xl cursor-pointer">
+          Welcome to your personalized styling dashboard
+        </h2>
+        <div class="flex flex-col lg:flex-row mt-16 md:mt-32">
+          <a href="styles.html" class="w-full lg:w-[40%] h-[17rem] mb-6 mr-6">
+            <div
+              class="flex justify-center items-center bg-[#ededed] rounded-[6.25rem] flex-col p-10 h-full w-full cursor-pointer">
+              <h2 class="font-[500] sm:text-3xl text-2xl cursor-pointer mt-8">
+                My Styles
+              </h2>
+              <p class="sm:text-lg text-[0.9rem] text-[#4d5562] mb-10">
+                view & edit your style settings <br />
+                to book your next appointment
+              </p>
+            </div>
+          </a>
+          <a href="appointments.html" class="w-full lg:w-[40%] h-[17rem] mb-6">
+            <div
+              class="flex justify-center items-center bg-[#ededed] rounded-[6.25rem] flex-col p-10 h-full w-full cursor-pointer">
+              <h2 class="font-[500] sm:text-3xl text-2xl cursor-pointer">Appointments</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleSidebarButton = document.getElementById("toggleSidebar");
+    const sidebar = document.querySelector(".sidebar");
+    const main = document.querySelector(".main");
+    toggleSidebarButton.addEventListener("click", function () {
+      if (sidebar.style.display === "block") {
+        sidebar.style.display = "none";
+      } else {
+        sidebar.style.display = "block";
+      }
+      // sidebar.classList.toggle("hidden");
+    });
+  });
+</script>
+
+<script src="script.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/src/slick/slick.min.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>

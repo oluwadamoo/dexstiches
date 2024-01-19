@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Manrope:wght@200;300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: eastLibertySignature;
+  src: url("assets/fonts/eastliberty.ttf");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  background-color: #fafafa;
+  overflow: auto;
+}
+
+.special {
+  font-family: eastLibertySignature;
+  margin-top: -15px;
+}
+
+.first .right:hover img {
+  border: 5px solid black;
+}
+
+.first .right:hover .special {
+  color: #8b007d;
+}
+
+.box {
+  box-shadow: 0px 2px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.box2 {
+  border-radius: 0.625rem;
+  border: 0px solid #ffb800;
+  background: linear-gradient(180deg, #8b007d 0%, rgba(0, 0, 0, 0.95) 100%);
+}
+
+.fifth:hover .fifth-img {
+  border: 5px solid black;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+
+.fifth:hover .circle-div img {
+  border: 2px solid black;
+}
+
+.fifth:hover span {
+  color: black;
+}
+
+button {
+  outline: none;
+}
+
+button:hover,
+.button:hover {
+  /* opacity: 0.4; */
+  transform: scale(1.1);
+  animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.autoplay .card {
+  /* width: 310px !important; */
+  height: 200px !important;
+  padding: 25px 20px 20px 20px;
+}
+
+.autoplay .card span {
+  /* width: 60% !important; */
+  margin-right: auto !important;
+}
+
+.card:hover {
+  border: 1px solid fuchsia;
+}
+
+.card:hover button {
+  background: linear-gradient(180deg, #625201 0%, #8b007d 99.48%);
+}
+
+.autoplay {
+  color: white;
+  position: relative;
+}
+
+.autoplay .slick-prev {
+  position: absolute;
+  z-index: 20;
+  bottom: -2.5rem;
+  font-size: 1rem;
+}
+
+.autoplay .slick-next {
+  position: absolute;
+  z-index: 20;
+  bottom: -2.5rem;
+  right: 2rem;
+  font-size: 1rem;
+
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.slick-dots li {
+  margin-right: 2rem;
+}
+
+li[role="presentation"] button::before {
+  content: "\2022";
+  /* Unicode character for a bullet (•) */
+  display: inline-block;
+  margin-right: 5px;
+  /* Add some space between the bullet and the text */
+}
+
+.slick-dots li button {
+  /* Hide the text content */
+  font-size: 0;
+  color: transparent;
+  border-radius: 50%;
+  background: rgb(170, 163, 163);
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+}
+
+.slick-dots li button:hover {
+  /* opacity: 0.4; */
+  transform: scale(1.1);
+  animation: none;
+}
+
+/* 
+.autoplay button:hover {
+  background: fuchsia;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+} */
+
+.autoplay .box2:hover {
+  border: 1px solid #ffb800;
+  background: #000;
+}
+
+
+@media (max-width: 639px) {
+  .carousel-item {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 640px) {
+  .carousel-item {
+    flex: 0 0 25%;
+    min-width: 25%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-99%);
+  }
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 0.7rem;
+  background: linear-gradient(to right,
+      #000 0%,
+      #56BADA 35%,
+      #6347eb 70%,
+      #9e8500 100%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 0.25rem;
+  margin-top: 11rem;
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  background: #9e8500;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+}
+
+.slider::-moz-range-thumb {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #2563eb;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+}
+
+.milestone {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* .milestone-left {
+  left: 30px !important;
+}
+
+.milestone-right {
+  right: 120px !important;
+} */
+
+.slider-value {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#sliderValue {
+  top: 10rem;
+}
+
+
+.toggle-bg {
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-bg.active {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+div.card span.a {
+  display: inline-block;
+}
+
+div.card:hover span.a {
+  display: none;
+}
+
+div.card span.b {
+  display: none;
+}
+
+div.card:hover span.b {
+  display: inline-block;
+}
+
+.flatpickr-calendar.inline {
+  margin: auto;
+}
+
+/* =======================================================
+=======================================================
+=================================================== */
+
+
+/*  */
+
+/* Define the style when it's "checked" */
+.checked {
+  background-color: black;
+  color: white;
+}
+
+
+.calendarContainer {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.date {
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+#datePicker::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  /* Inverts the color to white */
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+thead,
+tbody {
+  border: 1px solid #EFEAEA;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+td,
+th {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+table input[type="checkbox"] {
+  box-shadow: 0 0 3px fuchsia;
+  border: 1px solid #EFEAEA;
+  outline: none;
+}
+
+.shopping-location {
+  width: 50%;
+  /* Adjust the width as needed */
+}
+
+
+td .switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 20px;
+}
+
+td .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+td .length {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F2F4F7;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+td .length:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  top: 1px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.length {
+  background-color: #489E85;
+}
+
+input:focus+.length {
+  box-shadow: 0 0 1px #489E85;
+}
+
+input:checked+.length:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded lengths */
+.length.round {
+  border-radius: 20px;
+}
+
+.length.round:before {
+  border-radius: 50%;
+}
+
+
+.sidebar a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: fuchsia;
+}
+
+.sidebar a.active {
+  color: fuchsia;
+}
+
+
+.radios .radio,
+.radios .checkbox {
+  /* display: inline-block; */
+  cursor: pointer;
+}
+
+.radios input[type="radio"] {
+  display: none;
+}
+
+.radios input[type="radio"]:checked+.radio {
+  background-color: black;
+  color: white;
+}
+
+.radios input[type="checkbox"] {
+  display: none;
+}
+
+.radios input[type="checkbox"]:checked+.checkbox {
+  background-color: black;
+  color: white;
+}
