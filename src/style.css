@@ -80,6 +80,10 @@ button:hover,
   }
 }
 
+/* .autoplay {
+  
+} */
+
 .autoplay .card {
   /* width: 310px !important; */
   height: 200px !important;
@@ -123,6 +127,7 @@ button:hover,
 .slick-dots {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 3rem;
 }
 
@@ -173,6 +178,14 @@ li[role="presentation"] button::before {
   .carousel-item {
     flex: 0 0 100%;
     min-width: 100%;
+  }
+
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
   }
 }
 
